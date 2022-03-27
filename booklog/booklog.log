@@ -1,0 +1,137 @@
+20190417
+
+database.php
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'port' => 33061,
+	'username' => 'verboetopere',
+	'password' => 'verboetopere',
+    
+	'database' => 'verboetopere',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+/* !!!!!*/	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_unicode_520_ci',
+	'swap_pre' => '',
+	'encrypt' => TRUE,
+	'compress' => FALSE,
+	'stricton' => true,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+
+ https://codeigniter.com/user_guide/libraries/encryption.html
+$config['csrf_protection'] = TRUE;
+$config['csrf_token_name'] = 'csrf_token_ecm2_name';
+$config['csrf_cookie_name'] = 'csrf_cookie_ecm2_name';
+$config['csrf_expire'] = 7200;
+$config['csrf_regenerate'] = TRUE;
+$config['csrf_exclude_uris'] = array();
+
+
+| 'sess_expiration'
+|
+|	The number of SECONDS you want the session to last.
+|	Setting to 0 (zero) means expire when the browser is closed.
+
+
+18/04/2019
+
+function recursive1($array, $level = 0) {
+    echo PHP_EOL;
+    foreach ($array as $node) {
+        echo str_repeat("&emsp;", $level), "[" . $node['name'] . "]", '';
+        if (isset($node['children'])) {
+            echo '<br/>';
+            recursive1($node['children'], $level + 1);
+            echo str_repeat("&emsp;", $level);
+        }
+        echo "[/" . $node['name'] . "]", '<br>'.PHP_EOL;
+    }
+}
+
+echo recursive1($sidebar);
+
+
+DA inserire
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Segreteria
+    </div>
+
+
+
+
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item <?php echo $active_menu === 'studenti' ? 'active' : ''; ?>">
+        <a class="nav-link <?php echo $active_menu === 'studenti' ? '' : 'collapsed'; ?>" 
+           href="#" 
+           data-toggle="collapse" data-target="#collapseStudenti" 
+           aria-expanded="<?php echo $active_menu === 'studenti' ? 'true' : 'false'; ?>" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Studenti</span>
+        </a>
+        <div id="collapseStudenti" 
+             class="collapse <?php echo $active_menu === 'studenti' ? 'show' : ''; ?>" 
+             aria-labelledby="headingStudenti" 
+             data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <!--<h6 class="collapse-header">Studenti:</h6>-->
+                <a class="collapse-item" href="<?php echo site_url('backend/cartella') ?>">Cartella</a>
+                <a class="collapse-item" href="<?php echo site_url('backend/pagelle') ?>">Pagelle</a>
+                <a class="collapse-item" href="<?php echo site_url('backend/tessere') ?>">Tessere</a>
+                <a class="collapse-item" href="<?php echo site_url('backend/cartella') ?>">Studia Moralia</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCorsiAccademici" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Corsi Accademici</span>
+        </a>
+        <div id="collapseCorsiAccademici" class="collapse" aria-labelledby="headingCorsiAccademici" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <!--<h6 class="collapse-header">Corsi:</h6>-->
+                <a class="collapse-item" href="utilities-color.html">Iscrizione</a>
+                <a class="collapse-item" href="utilities-border.html">Esami</a>
+                <a class="collapse-item" href="utilities-animation.html">Discussioni</a>
+                <a class="collapse-item" href="utilities-other.html">Attrezzi</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVarie" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Varie</span>
+        </a>
+        <div id="collapseVarie" class="collapse" aria-labelledby="headingVarie" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <!--<h6 class="collapse-header">Varie:</h6>-->
+                <a class="collapse-item" href="utilities-color.html">Tavole</a>
+                <a class="collapse-item" href="utilities-border.html">Finanze</a>
+                <a class="collapse-item" href="utilities-animation.html">Sistema</a>
+            </div>
+        </div>
+    </li>
+
+
+menu ricorsione e definizione dei dati da SQL finito
+
+
+
+
+https://newcodingera.com/datatable-using-codeigniter-part-2/
+
+
+
+

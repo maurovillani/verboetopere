@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-apr-2019, 17.38.01
+    Author     : Paolo Minervino <paolo.minervino@ecm2.it>
+*/
+
+.bg-gradient-login {
+  background-color: #4e73df;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
+  background-image: linear-gradient(180deg, #f6f6f9 10%, #6e7ca7 100%);
+  background-size: cover;
+}
+
+.bg-login-image {
+  background: url("../images/aaseal480x680.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bg-password-image {
+  background: url("../images/aaseal480x680.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form-control{
+    color:#000000;
+}
+
+#radioBtn .notActive{
+  color: #3276b1;
+  background-color: #fff;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
+    color: #fff;
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.topbar{
+  height: 40px;
+}
+.navbar {
+  min-height: 40px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.navbar-toggle {
+  /* (40px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+.inputcolor {
+    color: red;
+}
